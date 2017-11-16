@@ -14,7 +14,7 @@ public class ConfigUtil {
 
     public ConfigUtil(Context context){
         this.context = context;
-        mSpf = context.getSharedPreferences(Constans.CONFIG_INFO,Context.MODE_PRIVATE);
+        mSpf = context.getSharedPreferences(Constants.CONFIG_INFO,Context.MODE_PRIVATE);
         mEdit = mSpf.edit();
     }
 

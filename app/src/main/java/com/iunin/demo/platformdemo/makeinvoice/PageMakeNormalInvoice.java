@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.afollestad.materialdialogs.MaterialDialog;
@@ -53,6 +54,8 @@ public class PageMakeNormalInvoice extends Fragment implements View.OnClickListe
 
     private void createGoodsListDialog() {
         View rootView = getActivity().getLayoutInflater().inflate(R.layout.dialog_sel_good,null);
+        Button cancelButton = rootView.findViewById(R.id.cancel);
+        cancelButton.setOnClickListener(this);
         ListView listView = rootView.findViewById(R.id.id_good_list);
         listView.setAdapter(new SelectorGoodsListAdapter(getContext(),savedGoodsModels));
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

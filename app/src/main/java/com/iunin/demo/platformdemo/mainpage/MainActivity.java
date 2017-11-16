@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void initFuction(List<FunctionItem> items) {
         items.add(new FunctionItem("发票开具",R.drawable.kp, MakeInvoiceActivity.class));
-        items.add(new FunctionItem("发票查询",R.drawable.kp, ActivityQueryInvoice.class));
-        items.add(new FunctionItem("发票作废",R.drawable.kp, ActivityInvaildInvoice.class));
-        items.add(new FunctionItem("我的信息",R.drawable.kp, InfoSettingActivity.class));
+        items.add(new FunctionItem("发票查询",R.drawable.query, ActivityQueryInvoice.class));
+        items.add(new FunctionItem("发票作废",R.drawable.invaild, ActivityInvaildInvoice.class));
+        items.add(new FunctionItem("我的信息",R.drawable.mine, InfoSettingActivity.class));
     }
 }

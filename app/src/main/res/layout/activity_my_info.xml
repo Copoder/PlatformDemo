@@ -35,6 +35,18 @@
                 style="@style/common_edit"
                 />
         </LinearLayout>
+        <TextView
+            android:textSize="14sp"
+            android:background="@color/color_background_gray"
+            android:text="发票票样"
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+        <Spinner
+            android:id="@+id/fppy_spinner"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Spinner>
 
     </LinearLayout>
     <Button
