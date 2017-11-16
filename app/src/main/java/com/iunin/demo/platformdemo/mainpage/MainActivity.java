@@ -9,8 +9,10 @@ import android.support.v7.widget.RecyclerView;
 
 
 import com.iunin.demo.platformdemo.R;
+import com.iunin.demo.platformdemo.invaildinvoice.ActivityInvaildInvoice;
 import com.iunin.demo.platformdemo.makeinvoice.MakeInvoiceActivity;
 import com.iunin.demo.platformdemo.myparams.InfoSettingActivity;
+import com.iunin.demo.platformdemo.queryinvoice.ActivityQueryInvoice;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void initFuction(List<FunctionItem> items) {
         items.add(new FunctionItem("发票开具",R.drawable.kp, MakeInvoiceActivity.class));
+        items.add(new FunctionItem("发票查询",R.drawable.kp, ActivityQueryInvoice.class));
+        items.add(new FunctionItem("发票作废",R.drawable.kp, ActivityInvaildInvoice.class));
         items.add(new FunctionItem("我的信息",R.drawable.kp, InfoSettingActivity.class));
     }
 }

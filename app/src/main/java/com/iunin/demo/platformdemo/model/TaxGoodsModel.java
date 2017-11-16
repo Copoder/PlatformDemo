@@ -71,6 +71,10 @@ public class TaxGoodsModel  {
      *增值税特殊管理
      */
     public String zzstsgl = "";
+    /**
+     * 折扣
+     */
+    public String disCount = "";
 
     /**
      * 开 专/普/电子票

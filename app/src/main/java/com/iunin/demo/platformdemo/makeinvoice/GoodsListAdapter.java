@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.iunin.demo.platformdemo.R;
@@ -23,6 +24,7 @@ public class GoodsListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
     private Context mContext;
 
     private OnaddGoodsListener onaddGoodsListener;
+
     public GoodsListAdapter(List<TaxGoodsModel> goods, Context context){
         this.goods = goods;
         mContext = context;
@@ -33,10 +35,12 @@ public class GoodsListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
     }
     class GoodsListHolder extends RecyclerView.ViewHolder {
         private TextView name;
+        private ImageView btn_delete;
 
         public GoodsListHolder(View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.id_good_name);
+            btn_delete = itemView.findViewById(R.id.id_delete);
         }
     }
 
@@ -73,8 +77,16 @@ public class GoodsListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHold
                 });
             }
         }else {
-            TaxGoodsModel goodsModel = goods.get(position);
+            final TaxGoodsModel goodsModel = goods.get(position);
             ((GoodsListHolder)holder).name.setText(goodsModel.spmc);
+            ((GoodsListHolder)holder).btn_delete.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //删除商品的点击事件
+                    goods.remove(goodsModel);
+                    notifyDataSetChanged();
+                }
+            });
         }
     }
 

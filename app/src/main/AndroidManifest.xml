@@ -20,6 +20,15 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".myparams.InfoSettingActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".queryinvoice.ActivityQueryInvoice"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            >
+        </activity>
+        <activity android:name=".invaildinvoice.ActivityInvaildInvoice"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            >
+
+        </activity>
     </application>
 
 </manifest>
