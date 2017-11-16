@@ -63,17 +63,7 @@
                 android:layout_height="match_parent"
                 android:background="@color/settings_text_color"/>
 
-            <TextView
-                android:id="@+id/id_good_count"
-                style="@style/iv_title_normal"
-                android:layout_width="0dip"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="right|center_vertical"
-                android:layout_gravity="center_vertical"
-                android:paddingRight="2dip"
-                android:textColor="@color/settings_text_color"
-                android:textSize="12sp" />
+
 
             <View
                 android:id="@+id/id_linethird"

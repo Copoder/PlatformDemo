@@ -72,9 +72,10 @@
             style="@style/common_edit"
             />
     </LinearLayout>
-
+        <include layout="@layout/goods_topbar"/>
         <android.support.v7.widget.RecyclerView
             android:id="@+id/goods_list"
+            android:background="@drawable/linearlayout_no_top_border"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </android.support.v7.widget.RecyclerView>
